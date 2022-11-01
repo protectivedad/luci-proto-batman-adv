@@ -50,7 +50,7 @@ return network.registerProtocol('batadv', {
 		o = s.taboption('mesh', form.Flag, 'aggregated_ogms', _('Aggregate Originator Messages'),
 				_('reduces overhead by collecting and aggregating originator messages in a single packet rather than many small ones'));
 		o.ucioption = 'aggregated_ogms';
-		o.default = o.disabled;
+		o.default = o.enabled;
 
 		o = s.taboption('mesh', form.Value, 'orig_interval', _('Originator Interval'), 
 				_('The value specifies the interval (milliseconds) in which batman-adv floods the network with its protocol information.'));
