@@ -100,10 +100,5 @@ return network.registerProtocol('batadv', {
 				_('Enables more efficient, group aware multicast forwarding infrastructure in batman-adv.'));
 		o.ucioption = 'multicast_mode';
 		o.default = o.enabled;
-
-		o = s.taboption('mesh', form.Flag, 'network_coding', _('Network Coding'), 
-				_('When enabled network coding increases the WiFi throughput by combining multiple frames into a single frame, thus reducing the needed air time.'));
-		o.ucioption = 'network_coding';
-		o.default = o.enabled;
 	}
 });
